@@ -57,6 +57,7 @@ class DashBloc extends Bloc<DashEvent, DashState> {
             }
           });
         } else {
+
           add(RefreshToken(event.context));
         }
       } catch (e) {
