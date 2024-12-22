@@ -28,6 +28,10 @@ class ForgotBloc extends Bloc<ForgotEvent, ForgotState> {
       forgotEmailError = "Invalid email format";
     }
 
+
+
+
+
     emit(state.copyWith(forgotEmail: forgotEmail, forgotEmailError: forgotEmailError));
     debugPrint("Updated email: ${state.forgotEmail}");
   }
