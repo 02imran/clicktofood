@@ -21,7 +21,7 @@ class ForgotBloc extends Bloc<ForgotEvent, ForgotState> {
     final forgotEmail = event.forgotEmail;
     String? forgotEmailError;
 
-    // Simple email validation
+    // Simple email validation for forgot password
     if (forgotEmail.isEmpty) {
       forgotEmailError = "Email cannot be empty";
     } else if (!RegExp(r'^[^@]+@[^@]+\.[^@]+').hasMatch(forgotEmail)) {
